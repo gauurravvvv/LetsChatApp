@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimaryDark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+
+            <EditText
+                android:id="@+id/login_email"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="250dp"
+                android:textSize="15dp"
+                android:drawableStart="@drawable/email"
+                android:padding="10dp"
+                android:maxLength="30"
+                android:background="@drawable/inputs"
+                android:hint="Email"
+
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:inputType="text">
+
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/login_email"
+                android:layout_marginTop="20dp"
+                android:drawableStart="@drawable/password"
+                android:hint="Password"
+                android:maxLength="20"
+                android:layout_alignParentStart="true"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/inputs"
+                android:inputType="textPassword"></EditText>
+
+            <TextView
+                android:id="@+id/forget_password_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_password"
+                android:layout_marginTop="2dp"
+                android:text="Forget Password ?"
+                android:layout_centerHorizontal="true"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textAlignment="textEnd"
+                ></TextView>
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:textColor="#ffffff"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:padding="10dp"
+                android:textAllCaps="false"
+                android:layout_below="@+id/forget_password_link"
+                android:background="@drawable/buttons"
+                android:text="Login ">
+
+            </Button>
+
+
+            <TextView
+                android:id="@+id/need_new_account_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_btn"
+                android:layout_marginTop="2dp"
+                android:maxLength="20"
+                android:text="Need New Account ?"
+                android:layout_centerHorizontal="true"
+                android:textSize="18dp"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textAlignment="center"
+                ></TextView>
+
+
+            <TextView
+                android:id="@+id/login_using"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/need_new_account_link"
+                android:layout_marginTop="10dp"
+                android:maxLength="20"
+                android:text="Login Your Account "
+                android:layout_centerHorizontal="true"
+                android:textSize="18dp"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textAlignment="center"
+                ></TextView>
+
+
+            <Button
+                android:id="@+id/phone_login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:textColor="#ffffff"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:padding="10dp"
+                android:textAllCaps="false"
+                android:layout_below="@+id/login_using"
+                android:drawableStart="@drawable/phone"
+                android:background="@drawable/buttons"
+                android:text="Login via Phone">
+
+            </Button>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
